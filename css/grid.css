@@ -4,7 +4,11 @@
 }
 body{
 	overflow-x: hidden;
-    background-color: rgb(4, 63, 80);
+    background: rgb(4,63,80);
+    background: -moz-linear-gradient(90deg, rgba(4,63,80,1) 50%, rgba(1,4,5,1) 95%);
+    background: -webkit-linear-gradient(90deg, rgba(4,63,80,1) 50%, rgba(1,4,5,1) 95%);
+    background: linear-gradient(90deg, rgba(4,63,80,1) 50%, rgba(1,4,5,1) 95%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#043f50",endColorstr="#010405",GradientType=1);
 }
 html{
     font-size: 62.5%;
@@ -48,6 +52,7 @@ footer{
 .encabezado__logo{ 
     width: 100px;
     height: 100px;
+    animation: rotate-center 2s ease-in both;
 }
 .encabezado__h1{
     font-size: 400%; 
@@ -67,6 +72,15 @@ footer{
     color: white;
 }
 /*-----FIN propiedades pertenecientes a INDEX-----*/
+
+@keyframes rotate-center {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
 
 /* Vista Mobile */
 @media only screen and (min-width: 320px) and (max-width: 767px){
@@ -126,6 +140,11 @@ footer{
         text-decoration:underline;
         color: white;
         padding:5px;
+    }
+    .icon__redes:hover{
+        background: rgb(51, 138, 162);
+        padding: 0.3rem 0px 0.3rem 0px;
+        border-radius: 1px;
     }
     /*-----FIN propiedades pertenecientes a INDEX-----*/
     
@@ -432,6 +451,11 @@ footer{
         text-decoration:underline;
         color: white;
         padding:5px;
+    }
+    .icon__redes:hover{
+        background: rgb(68, 178, 209);
+        padding: 0.25rem 0px 0.25rem 0px;
+        border-radius: 2px;
     }
     /*-----FIN propiedades pertenecientes a INDEX-----*/
 
