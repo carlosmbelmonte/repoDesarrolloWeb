@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- link para css -->
 	<link rel="stylesheet" href="../css/grid.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <div class="gridContainer">
@@ -32,7 +34,7 @@
         </nav>
         <main class="menu--modificacion">
             <section>
-                <h2 class="menu__h2--modificacion">Quienes somos</h2>
+                <h2 data-aos="fade-right" data-aos-duration="2000" class="menu__h2--modificacion">Quienes somos</h2>
                 <article class="menu__articulo">
                     <iframe class="menu_video" width="300" height="270" src="https://www.youtube-nocookie.com/embed/L0dMwyvV9o4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <p class="menu__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam vero labore consequatur dolores sapiente nisi natus reprehenderit ea. Laudantium harum fugit sit sunt deserunt maiores, sint dolores porro nostrum!Nullam interdum, enim sed ultrices sagittis, nibh tortor viverra lacus, eu tristique risus sapien et eros. Cras gravida, felis sed sagittis convallis, nulla ante vehicula justo, id imperdiet enim nisi id mauris. Nunc egestas volutpat congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula purus eu enim vulputate rhoncus.</p>
@@ -49,17 +51,17 @@
                     <h3 class="piepagina__h3">Redes Sociales</h3>
                     <ul class="piepagina__list">
                         <li class="piepagina__item">
-                            <a href="https://www.facebook.com" target="_blank">
+                            <a class="icon__redes" href="https://www.facebook.com" target="_blank">
                                 <i class="fa fa-facebook-official" style="font-size:20px;color:white"></i>
                             </a>
                         </li>
                         <li class="piepagina__item"> 
-                            <a href="https://www.instagram.com" target="_blank">
+                            <a class="icon__redes" href="https://www.instagram.com" target="_blank">
                                 <i class="fa fa-instagram" style="font-size:20px;color:white"></i>
                             </a>
                         </li>
                         <li class="piepagina__item">
-                            <a href="https://www.linkedin.com" target="_blank">
+                            <a class="icon__redes" href="https://www.linkedin.com" target="_blank">
                                 <i class="fa fa-linkedin-square" style="font-size:20px;color:white"></i> 
                             </a>
                         </li>
@@ -77,5 +79,8 @@
             </div>        
         </footer>     
     </div>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
