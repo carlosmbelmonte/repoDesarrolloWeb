@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+	overflow-x: hidden;
+    background: rgb(4,63,80);
+    background: -moz-linear-gradient(90deg, rgba(4,63,80,1) 50%, rgba(1,4,5,1) 95%);
+    background: -webkit-linear-gradient(90deg, rgba(4,63,80,1) 50%, rgba(1,4,5,1) 95%);
+    background: linear-gradient(90deg, rgba(4,63,80,1) 50%, rgba(1,4,5,1) 95%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#043f50",endColorstr="#010405",GradientType=1);
+}
+html{
+    /*font-size: 62.5%;*/
+    font-family: 'Roboto Condensed', sans-serif;  
+}
+a{
+    text-decoration: none; 
+}
+/*-----INICIO propiedades pertenecientes a INDEX-----*/
+.encabezado__container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.encabezado{
+    background-color: rgb(51, 138, 162);   
+}
+
+.divheader{
+    display:flex;
+    padding:5px 0px;
+    align-items: center; 
+}
+.encabezado__logo{ 
+    width: 100px;
+    height: 100px;
+    animation: rotate-center 2s ease-in both;
+}
+.encabezado__h1{  
+    color: white;
+    padding: 0px 10px 0px 10px;
+    /*---Agregado/Modificado para bootstrap*/
+    /*font-size: 200%; */
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 0;
+
+}
+.encabezado__navbar{
+    padding-bottom: 0px;
+    padding-top: 0px;
+    font-weight: bold;
+}
+.encabezado__anchor{
+    color: white;
+    /*font-size: 100%;*/
+}
+.encabezado__anchor:hover{
+    color: white;
+    background: rgb(4, 63, 80);
+    /*padding: 0.15rem 0px 0.15rem 0px;*/
+    border-radius: 5px;
+}
+.piepagina{
+    font-weight: bold;
+    color: white;
+}
+
+.icon__redes:hover{
+    background: rgb(51, 138, 162);
+    /*padding: 0.3rem 0px 0.3rem 0px;*/
+    border-radius: 1px;
+}
+
+.piepagina__list{
+    list-style: none;
+    color: white;
+    padding-right: 0rem;
+    padding-left: 0rem;
+}
+
+/*-----INICIO propiedades pertenecientes a las Paginas-----*/
+.menu--modificacion{
+    background: whitesmoke; 
+    height: 100vh;
+}
+.menu__h2--modificacion{
+    background-color: rgb(165, 165, 165);
+    color:whitesmoke; 
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+}
+
+/*-----FIN propiedades pertenecientes a INDEX-----*/
+@keyframes rotate-center {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+/* Vista Mobile */
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    /*-----INICIO propiedades pertenecientes a INDEX-----*/
+    .menu{
+        background-image: url("../assets/fondo.jpg");
+        height: 100vh;
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 50px 30px;
+        display: flex;
+        align-items: center;  
+    }
+    .menu__h2{
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center; 
+        color: lightslategrey;
+        background-color: rgba(255, 255, 255, 0.818);
+        padding: 5px 30px 5px 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;  
+    }
+    .menu__a{
+        /*font-size: 125%;*/
+        text-align: center; 
+        color: white;
+        background-color: rgb(51, 138, 162);
+        padding: 10px 20px 10px 20px;/*aplicando padding*/
+        border-radius: 10px;
+        font-weight: bold;
+    }
+}
+
+/* vista desktop */
+@media only screen and (min-width: 768px){  
+    /*-----INICIO propiedades pertenecientes a INDEX-----*/
+    .menu{
+        background-image: url("../assets/fondo.jpg");
+        height: 100vh;
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 50px 30px;
+        display: flex;
+        align-items: center;  
+    }
+    .menu__h2{
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: center; 
+        color: lightslategrey;
+        background-color: rgba(255, 255, 255, 0.818);
+        padding: 5px 80px 5px 80px;
+        margin-top: 20px;
+        margin-bottom: 20px;  
+    }
+    .menu__a{
+        /*font-size: 200%;*/ 
+        text-align: center; 
+        color: white;
+        background-color: rgb(51, 138, 162);
+        padding: 10px 20px 10px 20px;/*aplicando padding*/
+        border-radius: 10px;
+        font-weight: bold;
+    }
+
+
+    
+}
