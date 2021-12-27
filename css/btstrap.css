@@ -83,7 +83,7 @@ a{
 /*-----INICIO propiedades pertenecientes a las Paginas-----*/
 .menu--modificacion{
     background: whitesmoke; 
-    height: 100vh;
+    height: auto;
 }
 .menu__h2--modificacion{
     background-color: rgb(165, 165, 165);
