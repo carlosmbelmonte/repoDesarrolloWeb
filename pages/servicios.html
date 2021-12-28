@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ENGENIUM S.A.</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Link de fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,86 +14,137 @@
     <!--iconos Redes sociales-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- link para css -->
-	<link rel="stylesheet" href="../css/grid.css">
+	<link rel="stylesheet" href="../css/btstrap.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
-    <div class="gridContainer">
-        <header class="encabezado">
-            <img class="encabezado__logo" src="../assets/logo.png" alt="Logo Engenium">
-            <h1 class="encabezado__h1">ENGENIUM</h1> 
-        </header>      
-        <nav class="encabezado__nav">
-            <ul class="encabezado__list">
-                <li class="encabezado__item"><a class="encabezado__anchor" href="../index.html">Home</a></li>
-                <li class="encabezado__item"><a class="encabezado__anchor" href="../pages/quienessomos.html">Quienes somos</a></li>
-                <li class="encabezado__item"><a class="encabezado__anchor" href="../pages/proyectos.html">Proyectos</a></li>
-                <li class="encabezado__item"><a class="encabezado__anchor" href="../pages/productos.html">Productos</a></li>
-                <li class="encabezado__item"><a class="encabezado__anchor" href="">Servicios</a></li>
-                <li class="encabezado__item"><a class="encabezado__anchor" href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <main class="menu--modificacion">
-            <section>
-                <h2 data-aos="fade-right" data-aos-duration="2000" class="menu__h2--modificacion">Servicios</h2>
-                <div class="grid__servicios">
-                    <img class="circular--square1" src="../assets/programacionPLC.jpg" width="150px" height="150px" alt="Programacion de PLC">
-                    <div class="producto__contenido1">
-                        <h3 class="menu__h3">Programacion de PLC</h3>
-                        <p class="menu__parrafo--modificacion">Somos especialistas en desarrollo de sistemas de control industrial, enfocados en la optimización de procesos, maximizando la producción de máquinas y líneas de producción sin descuidar la calidad y seguridad de las mismas.</p>
-                    </div> 
-
-                    <img class="circular--square2" src="../assets/tablero.jpg" width="150px" height="150px" alt="Montajes electricos">
-                    <div class="producto__contenido2">
-                        <h3 class="menu__h3">Montajes electricos en media y baja potencia</h3>
-                        <p class="menu__parrafo--modificacion">Contamos con un equipo de técnicos especializados en el armado de tableros, prestando especial detalle en la calidad de las terminaciones y el cumplimiento de la ingeniería. Todos nuestros tableros se envían al cliente testeados íntegramente con los protocolos de ensayo que indican las normas.</p>
-                    </div> 
-
-                    <img class="circular--square3" src="../assets/scada.jpg" width="150px" height="150px" alt="Diseño de SCADA">
-                    <div class="producto__contenido3">
-                        <h3 class="menu__h3">Diseños de sistemas SCADA</h3>
-                        <p class="menu__parrafo--modificacion">Contamos con un equipo de desarrollo e implementación de software industrial, con foco en la calidad y la robustez de soluciones que combinen la optimización de procesos y la seguridad de la planta.</p>
-                    </div> 
+    <!--CABECERA-->
+    <header class="encabezado">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-xs-12">
+                    <div class="divheader">
+                        <img class="encabezado__logo" src="../assets/logo.png" alt="Logo ENGENIUM">
+                        <h1 class="encabezado__h1">ENGENIUM</h1> 
+                    </div>
                 </div>
-            </section>
-        </main>
-        <footer>
-            <div class="piepagina__row">
-                <div>
-                    <h3 class="piepagina__h3">Redes Sociales</h3>
-                    <ul class="piepagina__list">
-                        <li class="piepagina__item">
-                            <a class="icon__redes" href="https://www.facebook.com" target="_blank">
+            </div>
+        </div>
+    </header>
+    <!--NAVEGACION-->    
+    <nav class="navbar navbar-expand-md encabezado__navbar" style="background-color: #338AA2;">
+        <div class="container-fluid">  
+            <div class="navbar-light"> 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link encabezado__anchor" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link encabezado__anchor" href="../pages/quienessomos.html">Quienes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link encabezado__anchor" href="../pages/proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link encabezado__anchor" href="../pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link encabezado__anchor" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link encabezado__anchor" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--MENU-->
+    <main class="menu--modificacion pb-1">
+        <h2 data-aos="fade-right" data-aos-duration="2000" class="menu__h2--modificacion">Servicios</h2>
+        <div class="card border-dark mb-3 mt-3" style="max-width: auto;">
+            <div class="row g-0">
+                <div class="card-header fw-bolder fs-5">Programacion de PLC</div>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <img class="circular--square" src="../assets/programacionPLC.jpg" alt="Programacion de PLC">
+                </div>
+                <div class="col-md-8">      
+                    <div class="card-body">    
+                        <p class="card-text">Somos especialistas en desarrollo de sistemas de control industrial, enfocados en la optimización de procesos, maximizando la producción de máquinas y líneas de producción sin descuidar la calidad y seguridad de las mismas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card border-dark mb-3 mt-3" style="max-width: auto;">
+            <div class="row g-0">
+                <div class="card-header fw-bolder fs-5">Montajes electricos en media y baja potencia</div>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <img class="circular--square" src="../assets/tablero.jpg" alt="Montajes electricos">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">     
+                        <p class="card-text">Contamos con un equipo de técnicos especializados en el armado de tableros, prestando especial detalle en la calidad de las terminaciones y el cumplimiento de la ingeniería. Todos nuestros tableros se envían al cliente testeados íntegramente con los protocolos de ensayo que indican las normas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card border-dark mb-3 mt-3" style="max-width: auto;">
+            <div class="row g-0">
+                <div class="card-header fw-bolder fs-5">Diseños de sistemas SCADA</div>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <img class="circular--square" src="../assets/scada.jpg" alt="Diseño de SCADA">
+                </div>
+                <div class="col-md-8">    
+                    <div class="card-body">
+                        <p class="card-text">Contamos con un equipo de desarrollo e implementación de software industrial, con foco en la calidad y la robustez de soluciones que combinen la optimización de procesos y la seguridad de la planta.</p>
+                    </div>
+                </div>
+            </div>
+        </div>      
+    </main>
+    <!--PIE PAGINA-->
+    <footer>
+        <div class="container-fluid d-flex justify-content-md-end">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="piepagina">Redes Sociales</h5>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link icon__redes" href="https://www.facebook.com" target="_blank">
                                 <i class="fa fa-facebook-official" style="font-size:20px;color:white"></i>
                             </a>
                         </li>
-                        <li class="piepagina__item"> 
-                            <a class="icon__redes" href="https://www.instagram.com" target="_blank">
+                        <li class="nav-item">
+                            <a class="nav-link icon__redes" href="https://www.instagram.com" target="_blank">
                                 <i class="fa fa-instagram" style="font-size:20px;color:white"></i>
                             </a>
                         </li>
-                        <li class="piepagina__item">
-                            <a class="icon__redes" href="https://www.linkedin.com" target="_blank">
+                        <li class="nav-item">
+                            <a class="nav-link icon__redes" href="https://www.linkedin.com" target="_blank">
                                 <i class="fa fa-linkedin-square" style="font-size:20px;color:white"></i> 
                             </a>
                         </li>
                     </ul>
-                    <!-- img src="./assets/redes.png" alt="Redes Sociales"-->
                 </div>
-                <div>
-                    <h3 class="piepagina__h3">Contacto</h3>
+                <div class="col-md-8">
+                    <h5 class="piepagina">Contacto</h5>
                     <ul class="piepagina__list">
-                        <li class="piepagina__item--modify">Estados Unidos 1200, Munro, Buenos Aires, Argentina</li>
-                        <li class="piepagina__item--modify">(+54 11)8888-7474</li>
-                        <li class="piepagina__item--modify">contacto@engenium.com.ar</li>
+                        <li>Estados Unidos 1200, Munro, Buenos Aires, Argentina</li>
+                        <li>(+54 11)8888-7474</li>
+                        <li>contacto@engenium.com.ar</li>
                     </ul>
                 </div>
-            </div>        
-        </footer> 
-    </div>  
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
     <script>
         AOS.init();
-    </script>       
+    </script>  
 </body>
 </html>
