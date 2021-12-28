@@ -102,6 +102,13 @@ a{
     height:250px;
 }
 
+.menu__fieldset{
+    /*display: flex;*/
+    padding: 10px;
+    background-color: rgb(51, 138, 162,0.15);
+    border-radius: 15px;
+}
+
 /*-----FIN propiedades pertenecientes a INDEX-----*/
 @keyframes rotate-center {
     0% {
@@ -111,13 +118,7 @@ a{
       transform: rotate(360deg);
     }
 }
-.menu__productos--anchor{
-    /*font-size: 10%;*/
-    padding: 2.5px 10px;
-    background-color: rgba(33, 69, 118, 0.5);
-    color:whitesmoke;
-    border-radius: 3px;
-}
+
 /* Vista Mobile */
 @media only screen and (min-width: 320px) and (max-width: 767px){
     /*-----INICIO propiedades pertenecientes a INDEX-----*/
@@ -150,6 +151,13 @@ a{
         padding: 10px 20px 10px 20px;/*aplicando padding*/
         border-radius: 10px;
         font-weight: bold;
+    }
+    .menu__productos--anchor{
+        /*font-size: 10%;*/
+        padding: 2.5px 10px;
+        background-color: rgba(33, 69, 118, 0.5);
+        color:whitesmoke;
+        border-radius: 3px;
     }
 }
 
@@ -186,7 +194,11 @@ a{
         border-radius: 10px;
         font-weight: bold;
     }
-
-
-    
+    .menu__productos--anchor{
+        /*font-size: 200%;*/
+        padding: 5px 20px;
+        background-color: rgba(33, 69, 118, 0.5);
+        color:whitesmoke;
+        border-radius: 5px;
+    }    
 }
