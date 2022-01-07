@@ -66,20 +66,17 @@ a{
     font-weight: bold;
     color: white;
 }
-
 .icon__redes:hover{
     background: rgb(51, 138, 162);
     /*padding: 0.3rem 0px 0.3rem 0px;*/
     border-radius: 1px;
 }
-
 .piepagina__list{
     list-style: none;
     color: white;
     padding-right: 0rem;
     padding-left: 0rem;
 }
-
 /*-----INICIO propiedades pertenecientes a las Paginas-----*/
 .menu--modificacion{
     background: whitesmoke; 
@@ -92,7 +89,20 @@ a{
     padding-bottom: 2px;
     padding-left: 10px;
 }
-
+.menu__a{
+    text-align: center; 
+    color: white;
+    background-color: rgb(51, 138, 162);
+    padding: 10px 20px 10px 20px;/*aplicando padding*/
+    border-radius: 10px;
+    font-weight: bold;
+}
+.menu__a:hover{
+    color: white;
+    background: rgb(4, 63, 80);
+    /*padding: 0.15rem 0px 0.15rem 0px;*/
+    border-radius: 10px;
+}
 .circular--square{
     /*grid-area:circulo1;*/
     border-radius: 50%;
@@ -101,14 +111,64 @@ a{
     width:250px;
     height:250px;
 }
-
 .menu__fieldset{
     /*display: flex;*/
     padding: 10px;
     background-color: rgb(144, 196, 211);
     border-radius: 15px;
 }
-
+.product { 
+    margin:1px;
+	position:relative;
+	overflow:hidden; 
+}
+.product .product-description { 
+    position:absolute;
+    left:0;
+    top:0;
+	display: flex;
+    width:100%;
+    height:100%;
+    justify-content: center;
+    align-items: center;    
+    color:#FFF;
+	border-radius: 2%;
+    transition: 0.5s opacity ease-in-out;
+    opacity:0; 
+}
+.product .RED{
+  background: rgba(242,57,41, 0.7);
+}
+.product .GREEN{
+  background: rgba(42,127,41, 0.7);
+}
+.product:hover .product-description{
+  opacity: 1; 
+}
+.requerido::after{
+    content: " (*)";
+    color: black;    
+}
+.requerido_mensaje::before{
+    /*content: " OBLIGATORIOS ";*/ 
+    content: "OPCIONALES";
+    color: black;
+    font-weight: bold; 
+    text-decoration:underline;
+}
+.btn_contacto{
+    background-color: rgb(51, 138, 162);
+    color: white;
+    text-align: center; 
+    padding: 5px 10px 5px 10px;/*aplicando padding*/
+    border-radius: 10px;
+    font-weight: bold;
+}
+.btn_contacto:hover{
+    color: white;
+    background: rgb(4, 63, 80);
+    border-radius: 10px;
+}
 /*-----FIN propiedades pertenecientes a INDEX-----*/
 @keyframes rotate-center {
     0% {
@@ -143,15 +203,6 @@ a{
         margin-top: 20px;
         margin-bottom: 20px;  
     }
-    .menu__a{
-        /*font-size: 125%;*/
-        text-align: center; 
-        color: white;
-        background-color: rgb(51, 138, 162);
-        padding: 10px 20px 10px 20px;/*aplicando padding*/
-        border-radius: 10px;
-        font-weight: bold;
-    }
     .menu__productos--anchor{
         /*font-size: 10%;*/
         padding: 2.5px 10px;
@@ -159,6 +210,10 @@ a{
         color:whitesmoke;
         border-radius: 3px;
     }
+    .menu__productos--anchor:hover{
+        background-color: rgb(51, 138, 162);   
+        color:whitesmoke;
+    } 
 }
 
 /* vista desktop */
@@ -185,20 +240,42 @@ a{
         margin-top: 20px;
         margin-bottom: 20px;  
     }
-    .menu__a{
-        /*font-size: 200%;*/ 
-        text-align: center; 
-        color: white;
-        background-color: rgb(51, 138, 162);
-        padding: 10px 20px 10px 20px;/*aplicando padding*/
-        border-radius: 10px;
-        font-weight: bold;
-    }
+
     .menu__productos--anchor{
         /*font-size: 200%;*/
         padding: 5px 20px;
         background-color: rgba(33, 69, 118, 0.5);
         color:whitesmoke;
         border-radius: 5px;
-    }    
+    }   
+    .menu__productos--anchor:hover{
+        background-color: rgb(51, 138, 162);   
+        color:whitesmoke;
+    } 
+    .project { 
+        /*margin:1px;*/
+        position:relative;
+        overflow:hidden; 
+        display:flex; 
+    }
+    .project .project-description { 
+        display: flex;
+        position:absolute;
+        left: 25%;
+        top:0;
+        width:50%;
+        height:100%;
+        justify-content: center;
+        align-items: center;  
+        color:#FFF;
+        font-size: 1.25rem;
+        font-weight: bold;
+    
+        background: rgba(92, 91, 91, 0.7);
+        transition: 0.5s opacity ease-in-out;
+        opacity:0; 
+    }
+    .project:hover .project-description{
+      opacity: 1; 
+    }
 }
