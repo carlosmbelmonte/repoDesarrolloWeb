@@ -1,0 +1,30 @@
+@import "../variables";
+.menu__fieldset{
+    padding: 10px;
+    background-color: rgb(144, 196, 211);
+    border-radius: 15px;
+}
+.requerido::after{
+    content: " (*)";
+    color: black;    
+}
+.requerido_mensaje::before{
+    /*content: " OBLIGATORIOS ";*/ 
+    content: "OPCIONALES";
+    color: black;
+    font-weight: $negrita; 
+    text-decoration:underline;
+}
+.btn_contacto{
+    background-color: $celesteOscuro;
+    color: white;
+    text-align: center; 
+    padding: 5px 10px 5px 10px;/*aplicando padding*/
+    border-radius: 10px;
+    font-weight: $negrita;
+    &:hover{
+        color: white;
+        background: $azulOscuro;
+        border-radius: 10px;
+    }
+}

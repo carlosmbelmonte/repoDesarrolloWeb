@@ -1,0 +1,14 @@
+@import "../variables";
+.menuindex__a{
+    text-align: center; 
+    color: white;
+    background-color: rgb(51, 138, 162);
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    font-weight: $negrita;
+    &:hover{
+        color: white;
+        background: $azulOscuro;
+        border-radius: 10px;
+    }
+}

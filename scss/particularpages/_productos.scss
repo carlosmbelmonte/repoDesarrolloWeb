@@ -1,0 +1,28 @@
+.product { 
+    margin:1px;
+	position:relative;
+	overflow:hidden; 
+    & .product-description { 
+        position:absolute;
+        left:0;
+        top:0;
+        display: flex;
+        width:100%;
+        height:100%;
+        justify-content: center;
+        align-items: center;    
+        color:#FFF;
+        border-radius: 2%;
+        transition: 0.5s opacity ease-in-out;
+        opacity:0; 
+    }
+    & .RED{
+        background: rgba(242,57,41, 0.7);
+    }
+    & .GREEN{
+        background: rgba(42,127,41, 0.7);
+    }
+    &:hover .product-description{
+        opacity: 1; 
+    }
+}

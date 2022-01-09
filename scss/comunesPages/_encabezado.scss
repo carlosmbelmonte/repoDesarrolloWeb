@@ -1,0 +1,41 @@
+@import "../variables";
+.encabezado{
+    background-color: $celesteOscuro;
+    &__container-fluid{
+        padding-left: 0px;
+        padding-right: 0px;
+    } 
+    &__logo{ 
+        width: 100px;
+        height: 100px;
+        animation: rotate-center 2s ease-in both;
+    }
+    &__h1{  
+        color: white;
+        padding: 0px 10px 0px 10px;
+        font-weight: bold;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        line-height: 0;
+    
+    }
+    &__navbar{
+        padding-bottom: 0px;
+        padding-top: 0px;
+        font-weight: bold;
+    }
+    &__anchor{
+        color: white;
+        &:hover{
+        color: white;
+        background: $azulOscuro;
+        border-radius: 5px;
+        }
+    }
+    
+}
+.divheader{
+    display:flex;
+    padding:5px 0px;
+    align-items: center; 
+}

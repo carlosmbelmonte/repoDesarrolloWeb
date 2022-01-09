@@ -1,0 +1,36 @@
+@import "../scss/comunesPages/reset";
+@import "../scss/comunesPages/body";
+/*Propiedades pertenecientes al encabezado*/
+@import "../scss/comunesPages/encabezado";
+/*Propiedades pertenecientes solo a menu en paginas, NO para index*/
+@import "../scss/comunesPages/menuspages";
+/*Propiedades pertenecientes al pie pagina*/
+@import "../scss/comunesPages/piepagina";
+
+/*-----INICIO propiedades pertenecientes a INDEX-----*/
+@import "../scss/particularpages/menuindex";
+/*-----INICIO propiedades pertenecientes a SERVICIOS-----*/
+@import "../scss/particularpages/servicios";
+/*-----INICIO propiedades pertenecientes a PRODUCTOS-----*/
+@import "../scss/particularpages/productos";
+/*-----INICIO propiedades pertenecientes a CONTACTO-----*/
+@import "../scss/particularpages/contacto";
+    
+
+@keyframes rotate-center {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+/* Vista Mobile */
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    @import "../scss/particularpages/mobilePag";
+}
+/* vista desktop */
+@media only screen and (min-width: 768px){  
+    @import "../scss/particularpages/desktopPag";
+}
