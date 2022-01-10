@@ -31,10 +31,8 @@
                 </div>
             </div>
         </div>
-    </header>
-    <!--NAVEGACION-->    
-    <nav class="navbar navbar-expand-md encabezado__navbar" style="background-color: #338AA2;">
-        <div class="container-fluid">  
+        <!--NAVEGACION (Modificacion, agregado al Header)--> 
+        <div class="container-fluid navbar navbar-expand-md encabezado__navbar" style="background-color: #338AA2;"> 
             <div class="navbar-light"> 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -63,7 +61,7 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </header>
     <!--MENU-->
     <main class="menupages">   
         <h2 data-aos="fade-right" data-aos-duration="2000" class="menupages__h2">Contacto</h2>
@@ -83,35 +81,37 @@
                     </ul>    
                 </div>
             </div>
-        </div>            
-        <form class="p-3">
-            <fieldset class="menu__fieldset">
-                <legend class="menu__legend fw-bold fs-3">Cómo podemos ayudarte?</legend>
-                <div class="row">
-                    <div class="col-md-5">
-                        <div class="mb-3">
-                            <label for="nompre_apellidoInput1" class="form-label requerido">Nombre y Apellido</label>
-                            <input type="text" class="form-control" id="nompre_apellidoInput1">
-                        </div>
-                        <div class="mb-3">
-                            <label for="mailInput1" class="form-label requerido">Mail</label>
-                            <input type="text" class="form-control" id="mailInput1">
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="mb-3">
-                            <label for="mensajeTextarea1" class="form-label">Mensaje:</label>
-                            <textarea class="form-control" id="mensajeTextarea1" placeholder="Escriba aqui su consulta" rows="10"></textarea>
-                            <div class="pt-2">
-                                <!--input type="submit" value="ENVIAR"-->
-                                <input class="btn btn_contacto" type="submit" value="ENVIAR">
+        </div>
+        <div class="container-fluid p-3">
+            <form>
+                <fieldset class="menu__fieldset">
+                    <legend class="menu__legend fw-bold fs-3">Cómo podemos ayudarte?</legend>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="mb-3">
+                                <label for="nompre_apellidoInput1" class="form-label requerido">Nombre y Apellido</label>
+                                <input type="text" class="form-control" id="nompre_apellidoInput1">
                             </div>
+                            <div class="mb-3">
+                                <label for="mailInput1" class="form-label requerido">Mail</label>
+                                <input type="text" class="form-control" id="mailInput1">
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="mb-3">
+                                <label for="mensajeTextarea1" class="form-label">Mensaje:</label>
+                                <textarea class="form-control" id="mensajeTextarea1" placeholder="Escriba aqui su consulta" rows="10"></textarea>
+                                <div class="pt-2">
+                                    <!--input type="submit" value="ENVIAR"-->
+                                    <input class="btn btn_contacto" type="submit" value="ENVIAR">
+                                </div>
+                            </div> 
                         </div> 
-                    </div> 
-                </div>
-                <p class="fst-italic fs-6">(*)Son campos <span class="requerido_mensaje"> para realizar la consulta.</span></p>
-            </fieldset>
-        </form>        
+                    </div>
+                    <p class="fst-italic fs-6">(*)Son campos <span class="requerido_mensaje"> para realizar la consulta.</span></p>
+                </fieldset>
+            </form>  
+        </div>                      
     </main>
     <!--PIE PAGINA-->
     <footer>
