@@ -95,6 +95,15 @@ a {
   width: 250px;
   height: 250px; }
 
+.servicios--anchor {
+  padding: 2.5px 10px;
+  background-color: #338aa2;
+  color: whitesmoke;
+  border-radius: 3px; }
+  .servicios--anchor:hover {
+    background-color: rgba(33, 69, 118, 0.5);
+    color: whitesmoke; }
+
 /*-----INICIO propiedades pertenecientes a PRODUCTOS-----*/
 .product {
   margin: 1px;
