@@ -1,3 +1,4 @@
+@import "../maps.scss";
 .product { 
     margin:1px;
 	position:relative;
@@ -16,12 +17,12 @@
         transition: 0.5s opacity ease-in-out;
         opacity:0; 
     }
-    & .RED{
-        background: rgba(242,57,41, 0.7);
+    @each $name,$bgcolor in $colores{
+        & .#{$name}{
+            background-color: $bgcolor;
+        }
     }
-    & .GREEN{
-        background: rgba(42,127,41, 0.7);
-    }
+
     &:hover .product-description{
         opacity: 1; 
     }

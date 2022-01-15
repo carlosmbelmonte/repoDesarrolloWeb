@@ -1,12 +1,12 @@
 @import "../variables";
+@import "../mixin";
 .piepagina{
     font-weight: $negrita;
     color: white;
     &__list{
         list-style: none;
         color: white;
-        padding-right: 0rem;
-        padding-left: 0rem;
+        @include paddingHorizontal(0rem,0rem);
     }
 }
 .icon__redes:hover{

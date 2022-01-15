@@ -27,10 +27,6 @@
 }
 
 /* Vista Mobile */
-@media only screen and (min-width: 320px) and (max-width: 767px){
-    @import "../scss/particularpages/mobilePag";
-}
-/* vista desktop */
-@media only screen and (min-width: 768px){  
-    @import "../scss/particularpages/desktopPag";
-}
+@import "../scss/particularpages/mobilePag";
+/* Vista desktop */
+@import "../scss/particularpages/desktopPag";

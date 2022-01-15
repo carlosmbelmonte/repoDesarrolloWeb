@@ -34,8 +34,8 @@ a {
     margin-bottom: 0px;
     line-height: 0; }
   .encabezado__navbar {
-    padding-bottom: 0px;
     padding-top: 0px;
+    padding-bottom: 0px;
     font-weight: bold; }
   .encabezado__anchor {
     color: white; }
@@ -67,15 +67,15 @@ a {
   .piepagina__list {
     list-style: none;
     color: white;
-    padding-right: 0rem;
-    padding-left: 0rem; }
+    padding-left: 0rem;
+    padding-right: 0rem; }
 
 .icon__redes:hover {
   background: #338aa2;
   border-radius: 1px; }
 
 /*-----INICIO propiedades pertenecientes a INDEX-----*/
-.menuindex__a {
+.menuindex__a, .menuindex__a:hover {
   text-align: center;
   color: white;
   background-color: #338aa2;
@@ -83,9 +83,7 @@ a {
   border-radius: 10px;
   font-weight: bold; }
   .menuindex__a:hover {
-    color: white;
-    background: #043f50;
-    border-radius: 10px; }
+    background: #043f50; }
 
 /*-----INICIO propiedades pertenecientes a SERVICIOS-----*/
 .circular--square {
@@ -121,9 +119,11 @@ a {
     transition: 0.5s opacity ease-in-out;
     opacity: 0; }
   .product .RED {
-    background: rgba(242, 57, 41, 0.7); }
+    background-color: rgba(242, 57, 41, 0.7); }
   .product .GREEN {
-    background: rgba(42, 127, 41, 0.7); }
+    background-color: rgba(42, 127, 41, 0.7); }
+  .product .GREY {
+    background-color: rgba(95, 95, 95, 0.7); }
   .product:hover .product-description {
     opacity: 1; }
 
@@ -138,24 +138,20 @@ a {
   color: black; }
 
 .requerido_mensaje::before {
-  /*content: " OBLIGATORIOS ";*/
-  content: "OPCIONALES";
+  content: "OBLIGATORIOS";
   color: black;
   font-weight: bold;
   text-decoration: underline; }
 
-.btn_contacto {
+.btn_contacto, .btn_contacto:hover {
   background-color: #338aa2;
   color: white;
   text-align: center;
   padding: 5px 10px 5px 10px;
-  /*aplicando padding*/
   border-radius: 10px;
   font-weight: bold; }
   .btn_contacto:hover {
-    color: white;
-    background: #043f50;
-    border-radius: 10px; }
+    background-color: #043f50; }
 
 @keyframes rotate-center {
   0% {
@@ -164,8 +160,8 @@ a {
     transform: rotate(360deg); } }
 
 /* Vista Mobile */
+/*-----INICIO propiedades pertenecientes a INDEX-----*/
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-  /*-----INICIO propiedades pertenecientes a INDEX-----*/
   .menuindex {
     background-image: url("../assets/fondo.jpg");
     height: 100vh;
@@ -178,25 +174,32 @@ a {
     align-items: center; }
     .menuindex__h2 {
       font-size: 2rem;
+      padding: 5px 30px 5px 30px;
       font-weight: bold;
       text-align: center;
       color: lightslategrey;
       background-color: rgba(255, 255, 255, 0.818);
-      padding: 5px 30px 5px 30px;
       margin-top: 20px;
       margin-bottom: 20px; }
   .menu__productos--anchor {
     padding: 2.5px 10px;
+    border-radius: 3px;
     background-color: rgba(33, 69, 118, 0.5);
-    color: whitesmoke;
-    border-radius: 3px; }
+    color: whitesmoke; }
     .menu__productos--anchor:hover {
       background-color: #338aa2;
+      color: whitesmoke; }
+  .menu__productos__disabled {
+    padding: 2.5px 10px;
+    border-radius: 3px;
+    background-color: #3e3f3e;
+    color: whitesmoke; }
+    .menu__productos__disabled:hover {
       color: whitesmoke; } }
 
-/* vista desktop */
+/* Vista desktop */
+/*-----INICIO propiedades pertenecientes a INDEX-----*/
 @media only screen and (min-width: 768px) {
-  /*-----INICIO propiedades pertenecientes a INDEX-----*/
   .menuindex {
     background-image: url("../assets/fondo.jpg");
     height: 100vh;
@@ -209,21 +212,27 @@ a {
     align-items: center; }
     .menuindex__h2 {
       font-size: 2.5rem;
+      padding: 5px 80px 5px 80px;
       font-weight: bold;
       text-align: center;
       color: lightslategrey;
       background-color: rgba(255, 255, 255, 0.818);
-      padding: 5px 80px 5px 80px;
       margin-top: 20px;
       margin-bottom: 20px; }
   .menu__productos--anchor {
-    /*font-size: 200%;*/
     padding: 5px 20px;
+    border-radius: 5px;
     background-color: rgba(33, 69, 118, 0.5);
-    color: whitesmoke;
-    border-radius: 5px; }
+    color: whitesmoke; }
     .menu__productos--anchor:hover {
       background-color: #338aa2;
+      color: whitesmoke; }
+  .menu__productos__disabled {
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: #3e3f3e;
+    color: whitesmoke; }
+    .menu__productos__disabled:hover {
       color: whitesmoke; }
   .project {
     position: relative;

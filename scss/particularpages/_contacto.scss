@@ -1,4 +1,5 @@
 @import "../variables";
+@import "../maps.scss";
 .menu__fieldset{
     padding: 10px;
     background-color: rgb(144, 196, 211);
@@ -9,8 +10,7 @@
     color: black;    
 }
 .requerido_mensaje::before{
-    /*content: " OBLIGATORIOS ";*/ 
-    content: "OPCIONALES";
+    content: map-get($requerimientos,Obligatorio);
     color: black;
     font-weight: $negrita; 
     text-decoration:underline;
@@ -19,12 +19,11 @@
     background-color: $celesteOscuro;
     color: white;
     text-align: center; 
-    padding: 5px 10px 5px 10px;/*aplicando padding*/
+    padding: 5px 10px 5px 10px;
     border-radius: 10px;
     font-weight: $negrita;
     &:hover{
-        color: white;
-        background: $azulOscuro;
-        border-radius: 10px;
+        @extend .btn_contacto;
+        background-color: $azulOscuro;
     }
 }

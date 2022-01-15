@@ -1,11 +1,11 @@
+@import "../mixin";
 .menupages{
     background: whitesmoke; 
     height: auto;
     &__h2{
         background-color: rgb(165, 165, 165);
         color:whitesmoke; 
-        padding-top: 2px;
-        padding-bottom: 2px;
+        @include paddingVertical(2px,2px);
         padding-left: 10px;
     }
 }

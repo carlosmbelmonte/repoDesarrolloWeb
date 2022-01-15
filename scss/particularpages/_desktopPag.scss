@@ -1,60 +1,53 @@
 @import "../variables";
+@import "../mixin";
 /*-----INICIO propiedades pertenecientes a INDEX-----*/
-.menuindex{
-    background-image: url("../assets/fondo.jpg");
-    height: 100vh;
-    background-attachment: scroll;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 50px 30px;
-    display: flex;
-    align-items: center; 
-    &__h2{
-        font-size: 2.5rem;
-        font-weight: $negrita;
-        text-align: center; 
-        color: lightslategrey;
-        background-color: rgba(255, 255, 255, 0.818);
-        padding: 5px 80px 5px 80px;
-        margin-top: 20px;
-        margin-bottom: 20px;  
-    } 
-}
-.menu__productos--anchor{
-    /*font-size: 200%;*/
-    padding: 5px 20px;
-    background-color: rgba(33, 69, 118, 0.5);
-    color:whitesmoke;
-    border-radius: 5px;
-    &:hover{
-        background-color: $celesteOscuro;   
-        color:whitesmoke;
-    } 
-}   
-
-.project { 
-    position:relative;
-    overflow:hidden; 
-    display:flex; 
-    & .project-description { 
-        display: flex;
-        position:absolute;
-        left: 25%;
-        top:0;
-        width:50%;
-        height:100%;
-        justify-content: center;
-        align-items: center;  
-        color:#FFF;
-        font-size: 1.25rem;
-        font-weight: $negrita;
-    
-        background: rgba(92, 91, 91, 0.7);
-        transition: 0.5s opacity ease-in-out;
-        opacity:0; 
+@media only screen and (min-width: 768px){  
+    .menuindex{
+        @include responsive_index; 
+        &__h2{
+            @include escritorio_h2;
+            @include responsive_h2;
+            @include marginVertical(20px,20px);
+        } 
     }
-    &:hover .project-description{
-        opacity: 1; 
+    .menu__productos--anchor{
+        @include escritorio_productos;
+        @include responsive_productos(rgba(33, 69, 118, 0.5),whitesmoke);
+        &:hover{
+            @include responsive_productos($celesteOscuro,whitesmoke);
+        } 
+    }
+
+    .menu__productos__disabled{
+        @include escritorio_productos;
+        @include responsive_productos(rgb(62, 63, 62),whitesmoke);
+        &:hover{
+            color:whitesmoke;
+        }
+    }   
+
+    .project { 
+        position:relative;
+        overflow:hidden; 
+        display:flex; 
+        & .project-description { 
+            display: flex;
+            position:absolute;
+            left: 25%;
+            top:0;
+            width:50%;
+            height:100%;
+            justify-content: center;
+            align-items: center;  
+            color:#FFF;
+            font-size: 1.25rem;
+            font-weight: $negrita;  
+            background: rgba(92, 91, 91, 0.7);
+            transition: 0.5s opacity ease-in-out;
+            opacity:0; 
+        }
+        &:hover .project-description{
+            opacity: 1; 
+        }
     }
 }

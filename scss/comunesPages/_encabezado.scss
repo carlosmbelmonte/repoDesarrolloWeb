@@ -1,13 +1,12 @@
 @import "../variables";
+@import "../mixin";
 .encabezado{
     background-color: $celesteOscuro;
     &__container-fluid{
-        padding-left: 0px;
-        padding-right: 0px;
+        @include paddingHorizontal(0px,0px);
     } 
     &__logo{ 
-        width: 100px;
-        height: 100px;
+        @include dimesiones(100px,100px);
         animation: rotate-center 2s ease-in both;
     }
     &__h1{  
@@ -20,8 +19,7 @@
     
     }
     &__navbar{
-        padding-bottom: 0px;
-        padding-top: 0px;
+        @include paddingVertical(0px,0px);
         font-weight: bold;
     }
     &__anchor{

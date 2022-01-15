@@ -7,8 +7,7 @@
     border-radius: 10px;
     font-weight: $negrita;
     &:hover{
-        color: white;
+        @extend .menuindex__a;
         background: $azulOscuro;
-        border-radius: 10px;
     }
 }

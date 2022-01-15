@@ -1,34 +1,27 @@
     @import "../variables";
+    @import "../mixin";
     /*-----INICIO propiedades pertenecientes a INDEX-----*/
-    .menuindex{
-        background-image: url("../assets/fondo.jpg");
-        height: 100vh;
-        background-attachment: scroll;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 50px 30px;
-        display: flex;
-        align-items: center;  
-        &__h2{
-            font-size: 2rem;
-            font-weight: $negrita;
-            text-align: center; 
-            color: lightslategrey;
-            background-color: rgba(255, 255, 255, 0.818);
-            padding: 5px 30px 5px 30px;
-            margin-top: 20px;
-            margin-bottom: 20px;  
+    @media only screen and (min-width: 320px) and (max-width: 767px){   
+        .menuindex{
+            @include responsive_index;  
+            &__h2{
+                @include mobile_h2;
+                @include responsive_h2;
+                @include marginVertical(20px,20px);
+            }
+        }
+        .menu__productos--anchor{
+            @include mobile_productos;
+            @include responsive_productos(rgba(33, 69, 118, 0.5),whitesmoke);
+            &:hover{
+                @include responsive_productos($celesteOscuro,whitesmoke);
+        } 
+        }
+        .menu__productos__disabled{
+            @include mobile_productos;
+            @include responsive_productos(rgb(62, 63, 62),whitesmoke);
+            &:hover{
+                color:whitesmoke;
+            }
         }
     }
-    .menu__productos--anchor{
-        padding: 2.5px 10px;
-        background-color: rgba(33, 69, 118, 0.5);
-        color:whitesmoke;
-        border-radius: 3px;
-        &:hover{
-            background-color: rgb(51, 138, 162);   
-            color:whitesmoke;
-        } 
-    }
-  
