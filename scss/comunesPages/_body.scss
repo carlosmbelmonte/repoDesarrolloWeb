@@ -6,7 +6,9 @@ body{
     background: -webkit-linear-gradient(90deg, rgba(4,63,80,1) 50%, rgba(1,4,5,1) 95%);
     background: linear-gradient(90deg, rgba(4,63,80,1) 50%, rgba(1,4,5,1) 95%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#043f50",endColorstr="#010405",GradientType=1);
+    height: 100vh;
 }
+
 html{
     font-family: 'Roboto Condensed', sans-serif;  
 }

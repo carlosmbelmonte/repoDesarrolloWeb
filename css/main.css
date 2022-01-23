@@ -8,7 +8,8 @@ body {
   background: -moz-linear-gradient(90deg, #043f50 50%, #010405 95%);
   background: -webkit-linear-gradient(90deg, #043f50 50%, #010405 95%);
   background: linear-gradient(90deg, #043f50 50%, #010405 95%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#043f50",endColorstr="#010405",GradientType=1); }
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#043f50",endColorstr="#010405",GradientType=1);
+  height: 100vh; }
 
 html {
   font-family: 'Roboto Condensed', sans-serif; }
@@ -164,7 +165,7 @@ a {
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .menuindex {
     background-image: url("../assets/fondo.jpg");
-    height: 100vh;
+    height: 100%;
     background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
@@ -202,7 +203,7 @@ a {
 @media only screen and (min-width: 768px) {
   .menuindex {
     background-image: url("../assets/fondo.jpg");
-    height: 100vh;
+    height: 100%;
     background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
