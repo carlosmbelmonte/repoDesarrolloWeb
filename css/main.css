@@ -209,7 +209,15 @@ a {
     background-color: #3e3f3e;
     color: whitesmoke; }
     .menu__productos__disabled:hover {
-      color: whitesmoke; } }
+      color: whitesmoke; }
+  .servicios__parrafos {
+    font-size: 0.8rem; }
+  .servicios__titulos {
+    font-size: 1rem; }
+  .servicios__sticky {
+    font-size: 0.8rem; }
+  .ratio__mobile {
+    --bs-aspect-ratio: 75%; } }
 
 /* Vista desktop */
 /*-----INICIO propiedades pertenecientes a INDEX-----*/
@@ -268,4 +276,6 @@ a {
       transition: 0.5s opacity ease-in-out;
       opacity: 0; }
     .project:hover .project-description {
-      opacity: 1; } }
+      opacity: 1; }
+  .servicios__titulos {
+    font-size: 1.75rem; } }

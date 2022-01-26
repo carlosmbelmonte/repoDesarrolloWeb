@@ -24,4 +24,19 @@
                 color:whitesmoke;
             }
         }
+        .servicios__parrafos{
+            font-size: 0.8rem;
+        }
+
+        .servicios__titulos{
+            font-size: 1rem;
+        }
+
+        .servicios__sticky{
+            font-size: 0.8rem;
+        }
+
+        .ratio__mobile{
+            --bs-aspect-ratio: 75%;
+        }
     }
