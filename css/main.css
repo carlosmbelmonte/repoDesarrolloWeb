@@ -167,6 +167,10 @@ a {
   height: 64px;
   border-radius: 50%; }
 
+.parrafos__proyectos {
+  padding-right: 1rem;
+  padding-left: 1rem; }
+
 @keyframes rotate-center {
   0% {
     transform: rotate(0); }
