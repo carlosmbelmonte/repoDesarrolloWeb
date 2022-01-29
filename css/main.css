@@ -171,6 +171,25 @@ a {
   padding-left: 1rem;
   padding-right: 1rem; }
 
+.representantes {
+  margin: 1px;
+  overflow: hidden;
+  position: relative; }
+
+.representantes .representantes-description {
+  display: flex;
+  position: absolute;
+  left: 25%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s opacity ease-in-out;
+  opacity: 0; }
+
+.representantes:hover .representantes-description {
+  background: rgba(180, 180, 180, 0.7);
+  opacity: 1; }
+
 @keyframes rotate-center {
   0% {
     transform: rotate(0); }
