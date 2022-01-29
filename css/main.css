@@ -167,9 +167,9 @@ a {
   height: 64px;
   border-radius: 50%; }
 
-.parrafos__proyectos {
-  padding-right: 1rem;
-  padding-left: 1rem; }
+.parrafos__padding {
+  padding-left: 1rem;
+  padding-right: 1rem; }
 
 @keyframes rotate-center {
   0% {
@@ -221,7 +221,11 @@ a {
   .servicios__sticky {
     font-size: 0.8rem; }
   .ratio__mobile {
-    --bs-aspect-ratio: 75%; } }
+    --bs-aspect-ratio: 75%; }
+  .parrafos__proyectos {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem; } }
 
 /* Vista desktop */
 /*-----INICIO propiedades pertenecientes a INDEX-----*/
@@ -282,4 +286,8 @@ a {
     .project:hover .project-description {
       opacity: 1; }
   .servicios__titulos {
-    font-size: 1.75rem; } }
+    font-size: 1.75rem; }
+  .parrafos__proyectos {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    height: 12.5rem; } }

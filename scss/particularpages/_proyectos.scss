@@ -1,4 +1,4 @@
-.parrafos__proyectos{
-    padding-right: 1rem;
-    padding-left: 1rem;
+@import "../mixin";
+.parrafos__padding{
+    @include paddingHorizontal(1rem,1rem);
 }
