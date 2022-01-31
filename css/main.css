@@ -88,6 +88,9 @@ a {
     color: white;
     background-color: #338aa2; }
 
+.servicios__objectfit {
+  object-fit: cover; }
+
 /*-----INICIO propiedades pertenecientes a PRODUCTOS-----*/
 .product {
   margin: 1px;
