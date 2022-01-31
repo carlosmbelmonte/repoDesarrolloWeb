@@ -23,10 +23,6 @@ a {
   .encabezado__container-fluid {
     padding-left: 0px;
     padding-right: 0px; }
-  .encabezado__logo {
-    width: 100px;
-    height: 100px;
-    animation: rotate-center 2s ease-in both; }
   .encabezado__h1 {
     color: white;
     padding: 0px 10px 0px 10px;
@@ -34,21 +30,12 @@ a {
     margin-top: 0px;
     margin-bottom: 0px;
     line-height: 0; }
-  .encabezado__navbar {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    font-weight: bold; }
   .encabezado__anchor {
     color: white; }
     .encabezado__anchor:hover {
       color: white;
       background: #043f50;
       border-radius: 5px; }
-
-.divheader {
-  display: flex;
-  padding: 5px 0px;
-  align-items: center; }
 
 /*Propiedades pertenecientes solo a menu en paginas, NO para index*/
 .menupages {
@@ -199,6 +186,28 @@ a {
 /* Vista Mobile */
 /*-----INICIO propiedades pertenecientes a INDEX-----*/
 @media only screen and (min-width: 320px) and (max-width: 767px) {
+  .divheader {
+    display: flex;
+    padding: 5px 0px;
+    align-items: center;
+    flex-direction: column; }
+  .encabezado__logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    animation: rotate-center 2s ease-in both; }
+  .encabezado__h1 {
+    color: white;
+    padding: 0px 10px 0px 10px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    line-height: 0; }
+  .encabezado__navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-weight: bold;
+    justify-content: center; }
   .menuindex {
     background-image: url("../assets/fondo.jpg");
     height: 100%;
@@ -249,6 +258,25 @@ a {
 /* Vista desktop */
 /*-----INICIO propiedades pertenecientes a INDEX-----*/
 @media only screen and (min-width: 768px) {
+  .divheader {
+    display: flex;
+    padding: 5px 0px;
+    align-items: center; }
+  .encabezado__logo {
+    width: 100px;
+    height: 100px;
+    animation: rotate-center 2s ease-in both; }
+  .encabezado__h1 {
+    color: white;
+    padding: 0px 10px 0px 10px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 0; }
+  .encabezado__navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-weight: bold; }
   .menuindex {
     background-image: url("../assets/fondo.jpg");
     height: 100%;

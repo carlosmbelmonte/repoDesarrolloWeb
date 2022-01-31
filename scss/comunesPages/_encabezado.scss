@@ -5,10 +5,7 @@
     &__container-fluid{
         @include paddingHorizontal(0px,0px);
     } 
-    &__logo{ 
-        @include dimesiones(100px,100px);
-        animation: rotate-center 2s ease-in both;
-    }
+    
     &__h1{  
         color: white;
         padding: 0px 10px 0px 10px;
@@ -16,11 +13,6 @@
         margin-top: 0px;
         margin-bottom: 0px;
         line-height: 0;
-    
-    }
-    &__navbar{
-        @include paddingVertical(0px,0px);
-        font-weight: bold;
     }
     &__anchor{
         color: white;
@@ -31,9 +23,4 @@
         }
     }
     
-}
-.divheader{
-    display:flex;
-    padding:5px 0px;
-    align-items: center; 
 }

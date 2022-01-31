@@ -1,7 +1,34 @@
     @import "../variables";
     @import "../mixin";
     /*-----INICIO propiedades pertenecientes a INDEX-----*/
-    @media only screen and (min-width: 320px) and (max-width: 767px){   
+    @media only screen and (min-width: 320px) and (max-width: 767px){  
+        .divheader{
+            display:flex;
+            padding:5px 0px;
+            align-items: center; 
+            flex-direction: column;
+        }
+        .encabezado{
+            &__logo{ 
+                @include dimesiones(60px,60px);
+                margin-bottom: 15px;
+                animation: rotate-center 2s ease-in both;
+            }
+            &__h1{  
+                color: white;
+                padding: 0px 10px 0px 10px;
+                font-weight: bold;
+                margin-top: 0px;
+                margin-bottom: 15px;
+                line-height: 0;
+            }
+            &__navbar{
+                @include paddingVertical(0px,0px);
+                font-weight: bold;
+                justify-content: center;
+            }
+        } 
+        
         .menuindex{
             @include responsive_index;  
             &__h2{
