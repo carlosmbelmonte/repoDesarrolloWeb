@@ -66,12 +66,12 @@ a {
 .menuindex__a, .menuindex__a:hover {
   text-align: center;
   color: white;
-  background-color: #338aa2;
+  background-color: #043f50;
   padding: 10px 20px 10px 20px;
   border-radius: 10px;
   font-weight: bold; }
   .menuindex__a:hover {
-    background: #043f50; }
+    background: #338aa2; }
 
 /*-----INICIO propiedades pertenecientes a SERVICIOS-----*/
 .circular--square {

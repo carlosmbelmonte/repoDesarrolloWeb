@@ -2,12 +2,12 @@
 .menuindex__a{
     text-align: center; 
     color: white;
-    background-color: rgb(51, 138, 162);
+    background-color: $azulOscuro;
     padding: 10px 20px 10px 20px;
     border-radius: 10px;
     font-weight: $negrita;
     &:hover{
         @extend .menuindex__a;
-        background: $azulOscuro;
+        background: rgb(51, 138, 162);
     }
 }
